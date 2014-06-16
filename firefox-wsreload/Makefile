@@ -14,14 +14,14 @@ ifneq ($(PROFILE_DIR),)
 endif
 
 # Git command
-GIT_BIN				:= git
+GIT_BIN       := git
 
 # addon-sdk git url
 SDK_GIT_URL   := https://github.com/mozilla/addon-sdk.git
 
 # addon-sdk directory
 ifeq ($(SDK_DIR),)
-	SDK_DIR    := $(SOURCE_DIR)/addon-sdk
+  SDK_DIR    := $(SOURCE_DIR)/addon-sdk
 endif
 
 # addon-sdk binary directory
@@ -45,13 +45,13 @@ xpi: pull
 
 pull:
 	@mkdir -p $(SDK_DIR)
-	@if [ -e $(CFX_BIN) ]; then 					 \
-		cd $(SDK_DIR) ;                      \
-		$(GIT_BIN) pull ;                    \
-	 else                              		 \
-		cd $(SDK_DIR) ;                      \
-		$(GIT_BIN) clone $(SDK_GIT_URL) . ;  \
-		fi;
+	@if [ -e $(CFX_BIN) ]; then            \
+    cd $(SDK_DIR) ;                      \
+    $(GIT_BIN) pull ;                    \
+   else                                  \
+    cd $(SDK_DIR) ;                      \
+    $(GIT_BIN) clone $(SDK_GIT_URL) . ;  \
+    fi;
 	@cd $(SOURCE_DIR)
 
 test: pull

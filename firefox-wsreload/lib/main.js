@@ -1,6 +1,6 @@
 /**
   * wsreload Firefox add-on
-  * http://github.com/martinec/wsreload/firefox-wsreload
+  * http://github.com/martinec/wsreload/tree/master/firefox-wsreload
   *
   * License:
   * This Source Code Form is subject to the terms of
@@ -349,7 +349,7 @@ if(versionChecker.compare(appInfo.version, "29") >= 0) {
         "32": "./icon-32.png",
         "64": "./icon-64.png"
       },
-      label : "WSTabReload (listening messages)",
+      label : "WSTabReload (listening)",
       checked: true,
     },
     inactive : {
@@ -358,7 +358,7 @@ if(versionChecker.compare(appInfo.version, "29") >= 0) {
         "32": "./icon_inactive-32.png",
         "64": "./icon_inactive-64.png"
       },
-      label : "WSTabReload (ignoring messages)",
+      label : "WSTabReload (ignoring)",
       checked: false,
     }
   };
@@ -392,6 +392,6 @@ function listener(event) {
     console.log("@event type : " + topic);
   }
 }
-
+// -----------------------------------------------------------------------
 events.on("quit-application-requested", listener);
 events.on("quit-application-granted", listener);
