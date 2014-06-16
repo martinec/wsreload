@@ -43,7 +43,7 @@ This command will produce a file named `firefox-wsreload.xpi`. You can simply dr
 
 ## Related
 
-Also available on [Chrome](https://github.com/paradoxxxzero/wsreload/tree/master/chrome-wsreload).
+Also available on [Chrome](https://chrome.google.com/webstore/detail/wsreload/knefplbckfcppebehbomeankfgjalmak).
 
 ## Contribute
 
@@ -56,7 +56,7 @@ Free use of this software is granted under the terms of the MPL License.
 ## About
 
 - Firefox extension written by Cristian Martinez <me@martinec.org>
-- WSReload author is Florian Mounier <paradoxxx.zero@gmail.com>
+- [WSReload][] author is Florian Mounier <paradoxxx.zero@gmail.com>
 
 ----
 
